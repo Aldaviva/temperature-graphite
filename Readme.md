@@ -22,12 +22,16 @@ Read from a DS18*20 temperature sensor connected to a Raspberry Pi's GPIO pins, 
 # Setup
 1. Wire up the temperature sensor to the Raspberry Pi's GPIO pins (follow [Step 1 of PrivateEyePi's guide](http://www.projects.privateeyepi.com/home/temperature-gauge)).
 2. Start the Raspberry Pi and test the wiring:
-    - `sudo modprobe w1-gpio`
+	- `sudo modprobe w1-gpio`
 	- `sudo modprobe w1-therm`
 	- `cat /sys/bus/w1/devices/*/w1_slave`
 	- This should print some output containing `t=20812` or similar, which represents 20.812 degrees Celsius. Make sure the output contains a reasonable value for the temperature you expect.
-3. Copy `config.example.json` to `config.json` and make any changes to the settings that you want (Graphite host, for example).
-4. Run `npm install` to download Node dependencies.
+3. Set the kernel to automatically load the 1-Wire modules on boot
+	1. Edit `/etc/modules` as root
+	2. Append `w1-gpio`
+	3. Append `w1-therm`
+4. Copy `config.example.json` to `config.json` and make any changes to the settings that you want (Graphite host, for example).
+5. Run `npm install` to download Node dependencies.
 
 # Running
 1. Start the program with `node index.js`.
