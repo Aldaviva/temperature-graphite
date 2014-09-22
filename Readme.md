@@ -4,6 +4,7 @@ Temperature-Graphite
 Read from a DS18*20 temperature sensor connected to a Raspberry Pi's GPIO pins, and publish the temperature to a Graphite server.
 
 # Parts
+
 ## Hardware
 - [Raspberry Pi Model B](http://www.amazon.com/RASPBERRY-MODEL-756-8308-Raspberry-Pi/dp/B009SQQF9C)
 - [DS18B20 1-wire digital temperature sensor](http://www.adafruit.com/products/374)
@@ -12,6 +13,7 @@ Read from a DS18*20 temperature sensor connected to a Raspberry Pi's GPIO pins, 
 - Jumper cables (male-female)
 - Micro-USB power adapter
 - SD card
+
 ## Software
 - [Raspbian Linux](http://www.raspberrypi.org/downloads/) on the SD card
 - [Graphite](http://graphite.wikidot.com/) server, usually on a different machine (have fun setting that up)
