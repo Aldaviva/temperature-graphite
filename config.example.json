@@ -1,9 +1,18 @@
 {
     "graphiteHost": "127.0.0.1:2003",
     "graphiteKey": "temperature",
-    "temperaturePollingInterval": 300000,
-    "sensorAliases": {
-	"28-000005aacd47": "temp0"
-    },
+    "temperaturePollingInterval": 60000,
+    "sensors": [
+	{
+	    "name": "my-rpi-gpio-ds18b20",
+	    "type": "ds18*20",
+	    "address": "28-000005aacd47"
+	},
+	{
+	    "name": "local-weather-station",
+	    "type": "wunderground",
+	    "address": "KNUQ"
+	}
+    ],
     "fahrenheit": true
 }
