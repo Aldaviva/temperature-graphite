@@ -1,7 +1,7 @@
 {
     "name": "temperature-graphite",
     "author": "Ben Hutchison <ben@aldaviva.com>",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository": {
 	"type": "git",
 	"url": "https://github.com/Aldaviva/temperature-graphite"
@@ -11,6 +11,7 @@
 	"graphite": "0.0.6",
 	"q": "1.0.1",
 	"lodash": "2.4.1",
-	"pr-request2": "git://github.com/aldaviva/pr-request2.git#e714437d0abc58d645028231f095196c4c1ae911"
+	"pr-request2": "git://github.com/aldaviva/pr-request2.git#e714437d0abc58d645028231f095196c4c1ae911",
+	"cache-manager": "0.11.0"
     }
 }
